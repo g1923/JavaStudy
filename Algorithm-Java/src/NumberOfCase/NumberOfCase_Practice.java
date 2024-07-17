@@ -61,7 +61,7 @@ public class NumberOfCase_Practice {
         int number1 = 10;
         int number2 = 6;
 
-        Practice p = new Practice();
+        NumberOfCase_Practice p = new NumberOfCase_Practice();
         ArrayList l1 = p.getDivisor(number1);   // 10: 1, 2, 5, 10
         ArrayList l2 = p.getDivisor(number2);   // 6: 1, 2, 3, 6
         System.out.println("l1 = " + l1);
