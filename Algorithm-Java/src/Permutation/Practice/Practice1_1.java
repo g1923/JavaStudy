@@ -19,16 +19,31 @@ public class Practice1_1 {
  */
 
 // 1, 2, 3, 4 를 이용하여 세자리 자연수를 만드는 방법 (순서 O, 중복 x)의 각 결과를 출력하시오
+
+// [1,2,3] [1,2,4]
+// [1,3,2] [1,3,4]
+// [1,4,2] [1,4,3]
+// [2,1,3] [2,1,4]
+// [2,3,1] [2,3,4]
+// [2,4,1] [2,4,3]
+// [3,1,2] [3,1,4]
+// [3,2,1] [3,2,4]
+// [3,4,1] [3,4,2]
+
 // 방법 1
 // 하나의 배열을 가지고 자리를 바꾸면서 결과값을 구함.
 
 public class Practice1_1 {
+    static int cnt = 0;
+
     void permutation(int[] arr, int depth, int n, int r) {
         // depth: 각 자릿수를 의미
         if (depth == r) {
             for (int i = 0; i < r; i++) {
                 System.out.print(arr[i] + " ");
             }
+
+            cnt ++;
             System.out.println();
             return;
         }
@@ -52,5 +67,6 @@ public class Practice1_1 {
 
         Practice1_1 p = new Practice1_1();
         p.permutation(arr, 0, 4, 3);
+        System.out.println("cnt = " + cnt);
     }
 }
