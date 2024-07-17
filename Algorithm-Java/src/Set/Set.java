@@ -1,5 +1,6 @@
-package Set;// 기초 수학 - 집합
+package Set;
 
+// 기초 수학 - 집합
 import java.util.Arrays;
 import java.util.HashSet;
 
