@@ -1,4 +1,4 @@
-package LinearDataStructure.Queue.Test;
+package CodingTest;
 
 import java.util.ArrayList;
 import java.util.Arrays;

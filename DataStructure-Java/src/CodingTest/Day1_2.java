@@ -1,4 +1,4 @@
-package LinearDataStructure.Array.Test;
+package CodingTest;
 
 import java.util.Stack;
 
